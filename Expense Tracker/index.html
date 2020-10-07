@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body-container">
+        <h1 class="title">Expense Tracker</h1><br>
+        <h3 class="sub-title">Add A New Item</h3>
+        <form>
+            <div class="name" id="divName">
+                <h3>Name:</h3>
+                <input type="text" id="name"  placeholder="Where was the expense made?">
+            </div>
+
+
+        <div class="date-amount">
+                <div class="date">
+                <h3>Date:</h3>
+                <input type="date" id="date" value="">
+            </div>
+            <div class="amount">
+                <h3>Amount:</h3>
+                <input type="number"  id="amount">
+            </div>
+        </div>
+
+
+            <div class="button">
+                <button id="btn" onclick="onClick()">Add Expense</button>
+            </div>
+        </form>
+        
+
+        <div class="tableDiv">
+            <table class="table">
+                <thead id="table-head">
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" id="myModalDiv">
+      <span class="close">&times;</span>
+      
+    </div>
+  
+  </div>
+
+
+
+
+
+
+
+<script src="js.js"></script>
+</body>
+</html>
